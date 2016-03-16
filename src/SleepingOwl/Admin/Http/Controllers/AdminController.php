@@ -14,8 +14,8 @@ class AdminController extends Controller
 {
     public function __construct()
     {
-        if (request('_redirectBack')) {
-            request()->session()->put('_redirectBack', request('_redirectBack'));
+        if (request('_redirectBackBase64')) {
+            request()->session()->put('_redirectBack', base64_decode(request('_redirectBackBase64')));
         }
     }
 
