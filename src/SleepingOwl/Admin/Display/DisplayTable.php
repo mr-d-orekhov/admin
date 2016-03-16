@@ -104,7 +104,7 @@ class DisplayTable implements Renderable, DisplayInterface
 		{
 			return $filter->title();
 		}, $this->activeFilters);
-		return implode(', ', $titles);
+		return implode(', ', array_filter($titles));
 	}
 
 	public function initialize()
