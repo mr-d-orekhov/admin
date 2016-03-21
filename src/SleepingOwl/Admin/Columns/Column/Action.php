@@ -133,6 +133,7 @@ class Action extends NamedColumn
 			'value'  => $this->value(),
 			'target' => $this->target(),
 			'url'    => $this->url(),
+			'name'   => $this->name(),
 		];
 		return view(AdminTemplate::view('column.action'), $params);
 	}
