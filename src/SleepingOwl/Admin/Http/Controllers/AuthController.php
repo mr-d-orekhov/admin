@@ -58,7 +58,7 @@ class AuthController extends Controller
     {
         if (class_exists('Sentinel')) {
             Sentinel::logout();
-            return redirect('/');
+            return redirect('/logout');
         } else {
             AdminAuth::logout();
             return $this->redirect();
