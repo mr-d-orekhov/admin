@@ -73,6 +73,7 @@ return [
 	],
 	'file'     => [
 		'browse' => 'Выбор файла',
+		'browseMultiple' => 'Выбор файлов',
 		'remove' => 'Удалить',
 	],
 ];

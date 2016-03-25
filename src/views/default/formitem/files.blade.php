@@ -17,7 +17,7 @@
 			@endforeach
 		</div>
 		<div>
-			<div class="btn btn-primary imageBrowse"><i class="fa fa-upload"></i> {{ trans('admin::lang.image.browseMultiple') }}</div>
+			<div class="btn btn-primary imageBrowse"><i class="fa fa-upload"></i> {{ trans('admin::lang.file.browseMultiple') }}</div>
 		</div>
 		<input name="{{ $name }}" class="imageValue" type="hidden" value="{{ implode(',', $value) }}">
 		<div class="errors">
