@@ -38,9 +38,10 @@ class Image extends NamedFormItem implements WithRoutesInterface
                 $file->move($fullpath, $filename);
                 $value = $path . '/' . $filename;
                 $obFile = new File([
-                    'name'  => $file->getClientOriginalName() . '.' . $file->getClientOriginalExtension(),
+                    'name'  => $file->getClientOriginalName(),
                     'value' => $value,
                 ]);
+                $obFile->save();
                 return [
                     'url'   => asset($value),
                     'name'  => $obFile->name,
